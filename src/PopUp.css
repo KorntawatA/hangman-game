@@ -1,0 +1,30 @@
+.bubbleMessage {
+    display: none;
+
+    width: fit-content;
+    padding: 1.5em;
+    border-radius: 10%;
+    background-color: rgb(217, 223, 233);
+    font-size: 1rem;
+    font-weight: 700;
+    box-shadow: 1px 2px 4px;
+    position: absolute;
+    top: 105%;
+}
+
+.active {
+    display: block;
+
+    animation-name: fadeIn;
+    animation-duration: 0.8s;
+    animation-direction: normal;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0%;}
+    75% {transform: translateY(-0.5em); opacity: 100%;}
+}
+
+.inactive {
+    display: hidden;
+}
